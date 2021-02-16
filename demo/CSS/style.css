@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+}
+
+
+html , body {
+    background-color: #e3e3e3;
+}
+
+#main {
+    margin:  40px auto ;
+    height: 450px;
+    width: 550px;
+    background-color:  white;;
+}
+
+#main .header{
+    height: 50%;
+    /* background-color: white; */
+    padding: 45px;
+}
+
+#main .header h1 {
+    margin: 10px   0;
+    color: rgb(40, 224, 224);
+}
+
+#main .header h3 {
+    color: yellowgreen;
+    padding: 10px;
+}
+
+#main .header p{
+ color: grey;   
+ line-height: 1.3em;
+ font-size:  18px;
+
+}
+
+#main .other {
+max-width: 100%;
+margin-top: 30px auto;
+display: flex;
+height: 50%;
+color: #fff;
+}
+
+#main .other h2 {
+    margin: 10px;
+}
+
+#main .other .subscription {
+    font-size: 12px;
+    padding: 30px 10px;
+    width: 50%;
+    float:  left;
+    background-color:   rgb(15, 148, 141);
+}
+#main .other .subscription  p{
+    margin: 10px;
+    font-size: 16px;
+}
+
+#main .other .why {
+    font-size: 14px;
+    width: 50%;
+    padding: 30px 10px;
+    float: right;
+    background-color:   rgb(97, 235, 216);
+}
+#main .other .why p{
+    justify-content: center;
+    line-height: 1.5em;
+}
+
+#main .other .subscription .dolz {
+    font-size: 23px;
+}  
+#main .other .subscription .btn {
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+   background-color: yellowgreen;
+   border-radius: 3px;
+   padding: 7px 0;
+   margin: 10px;
+
+}  
+
+#main .other .subscription .btn:hover  {
+font-size: 18px;
+font-style: italic;
+cursor:  pointer;
+}
