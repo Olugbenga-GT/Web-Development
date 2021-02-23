@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background & Borders</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5em;
+        }
+
+        .container{
+            max-width: 960px;
+            margin:  30px auto;
+        }
+
+    .box{
+        background:#f4f4f4;
+        border: 1px solid #333;
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+    #box p {
+        text-align: center;
+        text-align:  justify;
+    }
+        #box-1 { 
+            background-color: blanchedalmond;
+            border: 3px groove solid;
+            border-radius: 5px;
+        }
+
+        #box-2 {
+            background: #333;
+            color: #fff;
+            border-top: green solid 3px;
+        }
+
+        #box-3{
+            background: url('../demo/img/centrakPark.jfif') center center / no-repeat;
+            /* background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover; */
+            height: 250px;
+            width: 300px;
+        }
+
+        #box-4 {
+            background-attachment: fixed;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box-1" class=" box">
+            <h3>Box  One</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                . Eius animi nostrum dolorum quam, est voluptates suscipit
+                 dolore quisquam nesciunt nemo.</p>
+        </div>
+    
+        <div id="box-2" class="box">
+            <h3>Box Two</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                . Eius animi nostrum dolorum quam, est voluptates suscipit
+                 dolore quisquam nesciunt nemo.</p>
+        </div>
+    
+        <div id="box-3" class="box">
+            <h3>Box Three</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                . Eius animi nostrum dolorum quam, est voluptates suscipit
+                 dolore quisquam nesciunt nemo.</p>
+        </div>
+    
+        <div id="box-4" class="box">
+            <h3>Box Four</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                . Eius animi nostrum dolorum quam, est voluptates suscipit
+                 dolore quisquam nesciunt nemo.</p>
+        </div>        
+    </div>
+
+</body>
+</html>

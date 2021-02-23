@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    background: url('/demo/img/bg-pattern-desktop.svg') no-repeat center center/ cover;
+    font-family: josefin font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Utility Classes */
+.text-primary {
+color:  hsl(0, 36%, 70%);
+}
+
+.text-secondary {
+   color:   hsl(0, 6%, 24%)
+}
+
+ #container .text {
+     height: 100%;
+     margin: 70px  130px;
+    max-width: 60%;
+    float:  left;
+} 
+
+#container .img {
+    max-width: 40%;
+    float:  right;
+} 
+
+#container .navbar {
+    margin-bottom: 70px;
+}
+
+#container .text .main h1 {
+    font-family: josefin sans-serif;
+    font-size: 30px;
+    letter-spacing: 15px;
+    line-height: 1.5em;
+    margin-bottom: 13px;
+}
+
+#container .text .main h4 {
+    font-size: 14px;
+    justify-self: center;
+    line-height: 1.65em;
+    letter-spacing:  2px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* #container .main .email-wrap {
+    padding: 15px 9px;
+    width: 150px;
+    border: 1px solid hsl(0, 93%, 68%);
+} */
+
+#container .main input {
+    padding: 10px 7px;
+    width: 350px;
+    border:1px solid hsl(0, 36%, 70%);
+    border-radius: 20px;
+    background:  url('/demo/img/bg-pattern-desktop.svg') no-repeat center center/ cover;
+}
+#container .main input ::placeholder{
+    font-weight: lighter;
+    padding: 5px;
+}
+
+#container .main .arrow {
+    margin: auto;
+    background:  linear-gradient(hsl(0, 36%, 70% ), hsl(0, 93%, 68%));
+    padding: 9.85px 20px;
+    border-radius: 20px;
+    margin-left: -57px;
+}
