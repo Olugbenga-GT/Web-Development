@@ -6,6 +6,9 @@
     <title>About Olugbenga</title>
  </head>
  <style>
+     body{
+         background-color: skyblue;;
+     }
     h1 {font-size: 24pt;}
     h3{font-size: 18pt;
         font-weight: bold;
@@ -16,7 +19,19 @@
         text-decoration: line-through;
         color:  pink;
     }
+    details{
+        max-width: 200px;
+    }
+ footer{
+     margin: 15px 0;
+     padding: 10px;
+     background-color: #e3e3e3;
+     color: #000;
+ }
 
+ .btn {
+     display: inline-block;
+ }
  </style>
  <body>
     <h1> About Olugbenga</h1>  
@@ -25,7 +40,7 @@
     <p><em>Picture Credit: T-Boy</em></p>
     
     <details>
-        <summary> <em>Click here to see more pictures of me</em>  </summary>
+        <summary> <em>Click for more pictures</em>  </summary>
         <table>
             <tr>
                 <td><img src="/PortFolio/img/standing.jpg" width="250px" height="250px"></td>
@@ -79,8 +94,135 @@
                 <li>UML with Argo</li>
             </ul>
         </details>
+        <details>
+            <summary> book an appointment</summary>>
+            <form   method="POST"  action="process.php" >
+                <fieldset>
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" name="" id="">
+                        </div>
+
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="password" name="email">
+                        </div>
+
+                        <div>
+                            <label for="phone">Phone</label>
+                            <input type="tel" name="number" id="number">
+                        </div>
+                        <div>
+                            <select name="where" id="">
+                                <option value="">Choose a country</option>
+                                <option value="">Canada</option>
+                                <option value="">Finland</option>
+                                <option value="">United States of America</option>
+                            </select>
+                            <!-- <select name="choices" size="3" >
+                                <option value="First">First</option>
+                                <option value="Second" selected>Second</option>
+                                <option value="Third">Third</option>
+                            </select> -->
+
+
+                        <label for="country">Country: </label>
+                            <select name="Countries" id="countries">
+                                    <optgroup label="North America">
+                                        <option selected >USA</option>
+                                        <option >Mexico</option>
+                                        <option >Canada</option>
+                                        <option >Colombia</option>
+                                        <option >Cuba</option>
+                                        <option >St.Salvador</option>
+                                    </optgroup>
+                                    <optgroup label="Africa">
+                                            <option >Angola</option>
+                                            <option selected >Nigeria</option>
+                                            <option >Ghana</option>
+                                            <option >Tanzania</option>
+                                            <option >Morroco</option>
+                                            <option >South Africa</option>
+                                            <option >Egypt</option>
+                                            <option >Ghana</option>
+                                    </optgroup>
+                                    <optgroup label="Europe">
+                                        <option selected>England</option>
+                                        <option >Spain</option>
+                                        <option >Germany</option>
+                                        <option >France</option>
+                                        <option >Croatia</option>
+                                        <option >Switzerland</option>
+                                        <option >Netherland</option>
+                                        <option >Belgium</option>
+                                    </optgroup>
+                                    <optgroup label="South America">
+                                        <option selected >Brazil</option>
+                                        <option >Colombia</option>
+                                        <option >Paraguay</option>
+                                        <option >Argentina</option>
+                                        <option >Uruguay</option>
+                                        <option >Cuba</option>
+                                        <option >Bulgaria</option>
+                                     </optgroup>   
+                                </select>
+                                <br> <br> <br>
+
+                                       <label for="city">City:  </label>
+                                        <input type="text" name="Country" list="country">
+                                       <datalist id="country">
+                                        <optgroup label="North America">
+                                            <option selected >USA</option>
+                                            <option >Mexico</option>
+                                            <option >Canada</option>
+                                            <option >Colombia</option>
+                                            <option >Cuba</option>
+                                            <option >St.Salvador</option>
+                                        </optgroup>
+                                        <optgroup label="Africa">
+                                                <option >Angola</option>
+                                                <option selected >Nigeria</option>
+                                                <option >Ghana</option>
+                                                <option >Tanzania</option>
+                                                <option >Morroco</option>
+                                                <option >South Africa</option>
+                                                <option >Egypt</option>
+                                                <option >Ghana</option>
+                                        </optgroup>
+                                        <optgroup label="Europe">
+                                            <option selected>England</option>
+                                            <option >Spain</option>
+                                            <option >Germany</option>
+                                            <option >France</option>
+                                            <option >Croatia</option>
+                                            <option >Switzerland</option>
+                                            <option >Netherland</option>
+                                            <option >Belgium</option>
+                                        </optgroup>
+                                        <optgroup label="South America">
+                                            <option selected >Brazil</option>
+                                            <option >Colombia</option>
+                                            <option >Paraguay</option>
+                                            <option >Argentina</option>
+                                            <option >Uruguay</option>
+                                            <option >Cuba</option>
+                                            <option >Bulgaria</option>
+                                         </optgroup>   
+                                       </datalist>                                     
+                                      </optgroup>
+                            </select>
+                        </div>
+                  
+                    <div class="btn">
+                        <input type="submit" value="Submit Details">
+                        <input type="reset" value=" Clear Details">
+                    </div>
+                </fieldset>
+    </form>
+        <details>
+
+
     </div>
-    <h4> This little page was done by Gastt @ <time></time>15:26:20</p></h4> 
-    <footer> Copyright &copy 2021 for Olugbenga_GT</footer>
+    <footer> Copyright &copy 2021 for Olugbenga_GT     &nbsp;  &nbsp;   <em>This little page was done by Gastt @ <time></time>15:26:20</em> </footer>
 </body>
 </html>
