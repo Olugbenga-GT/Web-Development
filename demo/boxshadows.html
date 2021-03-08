@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Box Shadows</title>
+      <style>
+            .container {
+                  display: flex;
+            }
+            .box {
+                  padding:  1rem;
+                  margin: 1rem;
+                  background: coral;
+                  color: #fff ;
+                  box-shadow: 2px 2px 35px 1px rgba(0, 0, 0, 0.3);
+                  display: none;
+
+                  /* Offset - x | Offset-y|Blur-radius|Spread radius|color|  You can specify inset to make it show inwardly */
+            }
+      </style>
+</head>
+<body>
+     <div class="container">
+           <div class="box">
+                 <h3>Heading</h3>
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, earum!</p>
+           </div>
+           <div class="box">
+                 <h3>Heading</h3>
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, earum!</p>
+           </div>
+           <div class="box">
+                 <h3>Heading</h3>
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, earum!</p>
+           </div>
+
+           <section class="text">
+                 <div>
+                       <h1 class="class1">Welcome to my course</h1>
+                       <h1 class="class2">Welcome to my course</h1>
+                       <h1 class="class3">Welcome to my course</h1>
+                       <h1 class="class4">Welcome to my course</h1>
+                 </div>
+
+                 <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                  <input type="number" id="b" name="b" value="50" /> +
+                  <input type="number" id="a" name="a" value="10" /> =
+                  <output name="result" for="a b">60</output>
+                </form>
+           </section>
+     </div> 
+</body>
+</html>
