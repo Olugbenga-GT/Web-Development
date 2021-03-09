@@ -75,7 +75,7 @@ html, body {
 }
 
 #showcase {
-      background: coral;
+      background: linear-gradient(90deg, orangered, yellow, red,pink, green 20%, blue, black);
       display: flex;
       flex-direction: column;
       height: 450px;
