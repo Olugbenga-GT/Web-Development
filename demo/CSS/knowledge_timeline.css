@@ -67,18 +67,23 @@ header h3 {
       width: 400px;
       padding: 0.5rem 1rem;
       background: var(--secondary-color);
-        transition:  all 0.5s ease-in-out;
+        transition:  all 1.5s ease-in-out;
+        visibility: hidden;
+        opacity: 0;
 }
 
 
 /* Right side */
 #timeline ul li:nth-child(odd) div {
       left: 40px;
+      transform: translateX(200px);
 }
 
 /* Left side */
 #timeline ul li:nth-child(even) div {
-      right: 434px;
+      left: -434px;
+      transform: translate(-200px, 0);
+      /* right: 634px; */
 }
 
 /* Creating the dots */
@@ -89,7 +94,7 @@ header h3 {
       bottom: 0   ;
       width: 1.3rem;
       height: 1.3rem;
-      background: var(--secondary-color);
+      background: inherit;
       transform: translateX(-40%);
       border-radius: 50%;
       transition: background 0.5s ease-in-out;;
@@ -121,12 +126,22 @@ header h3 {
       transform: translateX(413px);
 }
 
+/*  Show boxes */
+#timeline ul li.show div {
+      transform: none;
+      visibility: visible;
+      opacity: 1;
+}
+
+#timeline ul li.show::after{ 
+      background: var(--secondary-color);
+}
 #trials {
       background: #fff;
       margin: 2rem auto;
       width: 10rem;
       height: 10rem;
-      border: 1PX RED solid;
+      border: 1px RED solid;
       border-width:0 40px;
       border-color: transparent black
       /* border-width: 8px 0 8px 16px; */
