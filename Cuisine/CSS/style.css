@@ -2,13 +2,13 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=B612+Mono&family=Cabin+Condensed&display=swap');
-font-family: 'Cabin Condensed', sans-serif;
+
 
 
 :root{
       --primary-color: #333333;
       --dark-color:#111111;
-      --max-width: 68rem;
+      --max-width: 60rem;
 }
 
 * {
@@ -18,7 +18,7 @@ font-family: 'Cabin Condensed', sans-serif;
 }
 
 .container {
-      margin: 2.5rem 2rem 0.7rem 2rem;
+      margin: 2.5rem 5rem 0.7rem 5rem;
       max-width: var(--max-width);
 }
 
@@ -62,10 +62,14 @@ transition: all 0.3s ease-in;
 }
 
 #main-header .left-header .search input {
-      outline: #fff;
+      outline: none;
       border-radius: 30px;
       padding: 0.75rem 1.3rem;
-      box-shadow: 0 1px var(--primary-color) 2px;
+      border: 1px solid  #999;
+      border-top: #999;
+      border-left: #999;
+      border-right: #999;
+     
 }
 
 #main-header .left-header .search  i {
@@ -77,14 +81,21 @@ transition: all 0.3s ease-in;
       transition: background 0.5s ease-in;
 }
 #main-header .left-header .search  i:hover{
-      background: chartreuse;
+      background: rgb(78, 151, 4);
 }
 
-#navbar .list{ 
-      position: sticky;
-      top: 0;
-      left: 0;
+#navbar { 
+      overflow: hidden;
+      padding: 1.5rem;
+      z-index: 2;
+      background: #fff;
 }
+
+.sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
 
 #navbar .list {
       display: flex;
@@ -92,7 +103,8 @@ transition: all 0.3s ease-in;
       font-family:'B612 Mono', monospace;
       font-size: 13px;
       max-width: 600px;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.9rem;
+      padding-left: 3.3rem;
 }
 
 #navbar .list li{
@@ -104,17 +116,18 @@ transition: all 0.3s ease-in;
 }
 
 hr{
-      opacity: 0.3;
+      opacity: 0.1;
+      width: 100vw;
+  
 }
 
 /* Section : Chef */
 #chef{
       display: flex;
       justify-content: space-between;
-      margin: 3rem 0;
+      margin-top: 4rem; 
       overflow: hidden;
       font-family: 'Cabin Condensed', sans-serif;
-      position: absolute;
 }
 
 #chef a {
@@ -122,13 +135,24 @@ hr{
       background: #fff;
       padding: 0.5rem 0.9rem;
       border-radius: 5px;
-      position: relative;
+      position: fixed;
       top: 9rem;
       z-index : 2;
 }
 
 #chef  .inner-chef{
 display: flex;
+margin: 0 2.7rem;
+animation-name: carousel;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-delay: 7s;
+}
+
+@keyframes carousel{
+      to{
+            transform: translateX(-1200px);
+      }
 }
 #chef  .inner-chef  .chef-img {
 max-width: 50%;
@@ -148,16 +172,81 @@ max-width: 50%;
       margin-bottom: .5rem ;
 }
 #chef  .inner-chef  .chef-text p {
-      line-height: 1.3;
-      margin-bottom: .6rem;
+      line-height: 1.7;
+      margin-bottom: .9rem;
       color: #999;
+      font-size: 12px;
+      line-height: 1.4;
 }
 #chef  .inner-chef  .chef-text h5 {
-      color: #666
-}
+      color: #666;
+      margin-bottom: .9rem;}
 #chef  .inner-chef  .chef-text small{
 display: inline-block;
 color: #999;
 }
 
+#line {
+      display: flex;
+      margin: 4rem auto;
+      justify-content: center;
+      align-items: center;
+}
+#line a {
+      height: 4px;
+      width: 30px;
+      background: rgb(78, 151, 4);
+      margin: .3rem;
+}
+#line .first{
+      background: #888;
+}
+
+#news {
+      display: flex;
+      flex-basis: 1;
+      justify-content: space-between;
+      overflow: hidden;
+      margin: 0 4.5rem;
+
+}
+
+#news .editor,
+#news .blank,
+#news .trending{
+display: flex;
+flex-direction: column;
+margin: 0.5rem;
+max-width: 32%;
+font-family: Arial, Helvetica, sans-serif
+}
+
+#news .editor img{
+      margin-bottom: 2rem
+}
+#news .editor h2{
+      font-size:  1.2rem;
+      margin-bottom: 1rem;
+}
+#news .editor p {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+}
+#news .editor small{
+      font-size: 10px;
+      color: #444
+}
+
+#news .blank .one,
+#news .blank .two,
+#news .blank .three{
+display: flex;
+margin-bottom: 1rem;
+/* object-fit: cover; */
+}
+
+#news .blank h2{
+}
 
